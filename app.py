@@ -23,7 +23,7 @@ with st.expander('Analizar texto'):
         x=round(blob.sentiment.polarity,2)
         if x >= 0.5:
             st.write( 'Es un sentimiento Positivo 😊')
-            audio_file = open('myaudio.ogg', 'rb')
+            audio_file = open('audio.mp4', 'rb')
             audio_bytes = audio_file.read()
             st.audio(audio_bytes, format='audio/ogg')
             
