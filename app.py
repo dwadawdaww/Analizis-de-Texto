@@ -25,7 +25,7 @@ with st.expander('Analizar texto'):
             st.write( 'Es un sentimiento Positivo 😊')
             audio_file = open('audio.mp4', 'rb')
             audio_bytes = audio_file.read()
-            st.audio(audio_bytes, format='audio/ogg')
+            st.audio(audio_bytes, format='audio/mp4')
             
         elif x <= -0.5:
             st.write( 'Es un sentimiento Negativo 😔')
